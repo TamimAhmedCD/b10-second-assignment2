@@ -152,7 +152,9 @@ nav{
 }
 
 .hero-img{
+
     position: relative;
+
 }
 .hero-img img{
 
@@ -182,11 +184,13 @@ nav{
 }
 
 #ellipse{
+
     width: 40px;
     height: 40px;
     background: rgb(230, 83, 60);
     border-radius: 50%;
     margin-right: 12px;
+
 }
 
 .vdo-tut p{
@@ -197,9 +201,11 @@ nav{
 
 }
 .vdo-tut p >span{
+
     color: rgba(239, 237, 232, 0.65);
     font-size: 16px;
     font-weight: 400;
+
 }
 
 .workout-vdo{
@@ -237,8 +243,78 @@ nav{
 
 }
 
+/* habits section styles */
+
+.habits{
+
+    margin: 0 190px 0 190px;
+
+}
+
+.habits-text h1{
+
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 14px;
+
+}
+.habits-text p{
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 58px;
+
+}
+
+.habits-example{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.habits-example div{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 231px;
+    height: 274px;
+
+}
+
+.habits img{
+
+    width: 180px;
+    border: 5px solid red;
+    border-radius: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 26px;
+
+}
+
+.habits-example h5{
+
+    color: white;
+    font-size: 18px;
+    text-align: center;
 
 
+}
+.habits-example p{
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+    
+}
 
 
 /* responsive media query */
@@ -306,5 +382,15 @@ nav{
     .workout-vdo span{
         font-size: 9px;
     }
-
+    .habits{
+        margin: 0 20px 0 20px;
+    }
+    .habits-text h1{
+        font-size: 32px;
+        margin-top: 0px;
+    }
+    .habits-example{
+        flex-direction: column;
+        gap: 35px;
+    }
 }
