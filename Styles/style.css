@@ -261,6 +261,9 @@ nav{
     .hero h1{
         font-size: 36px;
     }
+    .hero-btn button{
+        padding: 12px 20px;
+    }
 
     .hero-img{
         width: 353px;
