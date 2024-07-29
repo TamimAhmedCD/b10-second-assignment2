@@ -1,0 +1,307 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Font Style */
+
+body{
+
+    font-family: "Inter", sans-serif;
+    background-color: black;
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* Navbar Styles Started */
+
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+/* nav styles */
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 190px 0 190px;
+    padding-top: 57px;
+
+}
+
+.logo{
+
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.navlist{
+
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 20px;
+    padding: 12px 5px;
+    border-radius: 50px;
+
+}
+
+
+
+.navlist a{
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all .52s ease;
+
+}
+
+.active{
+
+    background: rgb(230, 83, 60);
+
+}
+
+.navlist a:hover{
+
+    background: rgb(230, 83, 60);
+
+}
+.hamburger{
+
+    color: white;
+    display: none;
+    font-size: 24px;
+
+}
+
+/* hero section styles */
+
+.hero{
+
+    display: flex;
+    margin: 0 190px 0 190px;
+    margin-top: 96px;
+
+}
+
+.hero-text h1{
+
+    color: white;
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 900;
+    margin-bottom: 28px;
+
+}
+
+.hero-text span{
+
+    font-family: Dancing Script;
+
+}
+
+.hero-text p{
+
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+
+}
+
+.hero-btn button{
+
+    padding: 16px 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(230, 83, 60);
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 14px;
+    transition: all .52s ease;
+    cursor: pointer;
+
+}
+
+.hero-btn .btn2{
+    
+    background: transparent;
+    border: 1px solid white;
+
+}
+
+.hero-img{
+    position: relative;
+}
+.hero-img img{
+
+    position: absolute;
+    width: 349px;
+    height: 580px;
+    left: 250px;
+    top: -80px;
+
+}
+
+.vdo-tut{
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 96px;
+    top: 350px;
+    left: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+
+}
+
+#ellipse{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.vdo-tut p{
+
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+
+}
+.vdo-tut p >span{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.workout-vdo{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 193px;
+    height: 98px;
+    left: 450px;
+    top: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.workout-vdo p{
+
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    padding-left: 24px;
+
+}
+
+.workout-vdo span{
+
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 24px;
+
+}
+
+
+
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    nav{
+        margin: 0 20px 0 20px;
+    }
+    .navlist{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hero{
+        margin: 0 20px 0 20px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 36px;
+    }
+
+    .hero-img{
+        width: 353px;
+        height: 588px;
+        margin: 0 auto;
+        margin-top: 48px;
+    }
+    .hero-img img{
+        top: 0px;
+        left: 0px;
+    }
+    .vdo-tut{
+        width: 155.74px;
+        height: 72.58px;
+    }
+    #ellipse{
+        width: 30px;
+        height: 30px;
+    }
+    .vdo-tut{
+        left: 5px;
+        top: 280px;
+    }
+    .vdo-tut p{
+        font-size: 18px;
+    }
+    .vdo-tut p >span{
+        font-size: 12px;
+    }
+
+    .workout-vdo{
+        width: 145.91px;
+        height: 74.09px;
+        left: 200px;
+        top: 80px;
+    }
+    .workout-vdo p{
+        font-size: 30px;
+    }
+    .workout-vdo span{
+        font-size: 9px;
+    }
+
+}
