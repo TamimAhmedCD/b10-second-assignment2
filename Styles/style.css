@@ -463,6 +463,7 @@ nav{
     }
     .run{
         margin: 0 20px 0 20px;
+        margin-top: 66px;
     }
     .run-content{
         flex-direction: column;
