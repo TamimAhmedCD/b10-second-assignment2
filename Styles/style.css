@@ -433,6 +433,7 @@ nav{
 }
 
 .img-1{
+
     position: relative;
 
 }
@@ -648,17 +649,24 @@ nav{
 }
 
 .calculator select{
+
     padding: 12px 192px 12px 12px;
     border: none;
     margin-top: 12px;
     color: rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
+
 }
+
 #activity{
+
     padding: 12px 378px 12px 12px;
+
 }
+
 .calculator button{
+
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -668,6 +676,87 @@ nav{
     border-radius: 42px;
     background: rgb(230, 83, 60);
     cursor: pointer;
+
+}
+
+.our-team{
+
+    margin: 0 190px 0 190px;
+    margin-top: 88px;
+
+}
+
+.our-team-title{
+
+    margin-bottom: 58px;
+
+}
+.our-team-title h1{
+
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.our-team-title p{
+
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.team-img-container{
+
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: fit-content;
+
+}
+
+.team-img{
+
+    width: fit-content;
+    position: relative;
+    
+}
+
+.team-img img{
+
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 18px;
+
+}
+
+.team-img-text{
+
+    position: absolute;
+    top: 82%;
+    left: 5%;
+
+}
+
+.team-img-text h1{
+
+    color: white;
+    font-size: 20px;
+
+}
+
+.team-img-text p{
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+
 }
 
 /* responsive media query */
@@ -816,5 +905,18 @@ nav{
     }
     #activity{
         padding: 12px 210px 12px 12px;
+    }
+    .our-team{
+        margin: 0 20px 0 20px;
+        margin-top: 66px;
+    }
+    .our-team-title{
+        margin-bottom: 37px;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-img img{
+        height: 600px;
     }
 }
