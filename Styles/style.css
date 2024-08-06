@@ -722,15 +722,15 @@ nav{
 
 .team-img{
 
-    width: fit-content;
+    width: 100%;
     position: relative;
     
 }
 
 .team-img img{
 
-    max-width: 100%;
-    height: 350px;
+    width: 100%;
+    height: 272px;
     object-fit: cover;
     object-position: top;
     border-radius: 18px;
@@ -915,8 +915,5 @@ nav{
     }
     .team-img-container{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .team-img img{
-        height: 600px;
     }
 }
