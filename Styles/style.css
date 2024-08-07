@@ -813,6 +813,11 @@ footer{
 
 }
 
+.get-started a:hover{
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
 hr{
 
     margin: 0 190px;
@@ -829,6 +834,89 @@ hr{
     text-align: center;
     padding: 35px 0;
 }
+
+/* find gym styles */
+
+.find-gym{
+
+    padding: 49px 190px;
+    margin-top: 100px;
+    background-color: rgb(34, 34, 34);
+
+}
+
+.find-gym-title h1{
+
+    margin-bottom: 49px;
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.find-gym-text{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 34px;
+
+}
+
+
+.find-gym-text i{
+
+    margin-bottom: 15px;
+    margin-right: 8px;
+    color: rgb(230, 83, 60);
+
+}
+
+.find-gym-text span{
+
+    color: rgba(239, 237, 232, 0.65);
+
+}
+
+.find-gym-text a{
+
+    color: rgb(31, 81, 255);
+    font-size: 12px;
+    
+}
+
+.find-gym-input{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.find-gym-input input{
+
+    padding: 12px 100px 12px 20px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    margin-right: 1px;
+
+}
+
+.find-gym-input button{
+
+    padding: 12px 20px 12px 20px;
+    border: none;
+    background-color: rgb(230, 83, 60);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+
 
 
 /* responsive media query */
@@ -1001,5 +1089,20 @@ hr{
     }
     hr{
         margin: 0 20px;
+    }
+    .find-gym{
+        padding: 49px 20px;
+    }
+    .find-gym-title h1{
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .find-gym-text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .find-gym-input{
+        justify-content: flex-start;
     }
 }
